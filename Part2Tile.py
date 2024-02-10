@@ -11,7 +11,7 @@ warnings.simplefilter("ignore", UserWarning)
 country = gpd.read_file('IranPartsShp/IranParts.shp')
 country = country.to_crs(4326)
 country3857 = country.to_crs(3857)
-zoom = 19
+zoom = 18
 
 def deg2num(lat_deg, lon_deg, zoom):
   lat_rad = math.radians(lat_deg)
